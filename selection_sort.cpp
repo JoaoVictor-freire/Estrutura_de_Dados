@@ -4,9 +4,7 @@
 #include <chrono>
 
 using namespace std;
-
-#define inFileName "vectors/num.1000.1.in"
-#define vector_size 1000
+#define inFileName "vectors/num.100000.1.in"
 
 int main(){
 
@@ -46,13 +44,8 @@ int main(){
     }
     auto fim = chrono::high_resolution_clock::now();
 
-    for (const int& num : nums) {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-
     chrono::duration<double> duracao = fim - inicio;
-    cout << "execution time: " << duracao.count() << " seconds" << endl;
+    std::cout << "execution time: " << duracao.count() << " seconds" << endl;
 
     return 0;
 }
