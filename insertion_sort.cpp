@@ -42,6 +42,12 @@ int main(){
     auto fim = chrono::high_resolution_clock::now();
 
     chrono::duration<double> duracao = fim - inicio;
+
+    for (const int& num : nums) {
+        cout << num << endl;
+    }
+    cout << endl;
+
     std::cout << "execution time: " << duracao.count() << " seconds" << endl;
 
     return 0;
