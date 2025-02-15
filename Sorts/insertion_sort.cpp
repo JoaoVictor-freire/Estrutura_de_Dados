@@ -4,7 +4,7 @@
 #include <chrono>
 
 using namespace std;
-#define inFileName "vectors/num.100000.1.in"
+#define inFileName "vectors/num.100000.1.txt"
 
 int main(){
 
